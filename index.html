@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chats</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="login" type="button" class="btn btn-primary hidden">Google Login</button>
+        <img id="user-photo" class="circle" width="30">
+        <span id="username" class=""></span>
+        <button id="logout" type="button" class="btn btn-primary hidden">logout </button>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <img id="thinking" class="hidden" src="http://i0.kym-cdn.com/photos/images/original/000/716/033/6de.gif" alt="" width="250">
+                <img id="typing" class="hidden" src="https://i.imgur.com/p7mVYU6.gif" alt="" width="250">
+            </div>
+            <div class="col-4">
+                迷你聊天室
+                <ul id="chats">
+
+                </ul>
+                <input type="text" id="message">
+                <input id="file" type="file">
+                <div class="dropzone">
+                    Upload Files
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAbGfUe6RZUiCo8cdEXo-Nrk4vAmfH02rU",
+            authDomain: "edgaryang93307.firebaseapp.com",
+            databaseURL: "https://edgaryang93307.firebaseio.com",
+            projectId: "edgaryang93307",
+            storageBucket: "edgaryang93307.appspot.com",
+            messagingSenderId: "235965308694"
+        };
+        firebase.initializeApp(config);
+
+        db = firebase.firestore();
+        storage = firebase.storage();
+    </script>
+    <script src="./app4.js"></script>
+</body>
+
+</html>

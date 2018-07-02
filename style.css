@@ -1,0 +1,49 @@
+.warning {
+    background-color: rgb(248, 134, 41);
+    color: #fefefe;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card>img {
+    width: 250px;
+    height: 250px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropzone {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fefefe;
+    background-color: rgb(36, 35, 35);
+    border: 2px solid black;
+}
+
+.dragenter {
+    background-color: rgb(100, 99, 99);
+    color: black;
+}
